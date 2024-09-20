@@ -4,7 +4,8 @@
   "description": "A book management system",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "babel src -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,8 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/preset-env": "^7.25.4",
     "nodemon": "^2.0.12"
   }
 }
